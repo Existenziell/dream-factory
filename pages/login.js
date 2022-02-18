@@ -10,9 +10,9 @@ export default function LoginPage({ hasReadPermission }) {
         <Head>
           <title>Logout</title>
         </Head>
-        <div className="w-1/3 max-w-sm mx-auto">
+        <div className="w-full text-center">
           <button
-            className="mt-3 bg-green-400 text-white p-2 font-bold rounded hover:bg-green-600"
+            className="mt-16 bg-brand text-white border border-brand px-4 py-2 font-bold rounded hover:shadow hover:bg-white hover:text-brand transition-all"
             onClick={(e) => {
               e.preventDefault()
               const cookies = new Cookies()
