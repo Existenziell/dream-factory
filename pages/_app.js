@@ -23,7 +23,7 @@ DreamFactory.getInitialProps = async (appContext) => {
   const cookies = new Cookies(appContext.ctx.req.headers.cookie)
   const password = cookies.get(consts.SiteReadCookie) ?? ""
 
-  if (password === "letmein") {
+  if (password === "St4rk1ndustr13s") {
     appProps.pageProps.hasReadPermission = true
   }
 

@@ -31,7 +31,7 @@ export default function Protected({ hasReadPermission }) {
                     <p className="my-4">{p.desc}</p>
                     <p>
                       <span className="w-24 inline-block">URLs:</span>
-                      {p.urls.map(u => (<a href={u} target='_blank' className="inline-block mr-4">{u}</a>))}
+                      {p.urls.map(u => (<a href={u} target='_blank' rel="noreferrer" className="inline-block mr-4">{u}</a>))}
                     </p>
                     <p>
                       <span className="w-24 inline-block">Github:</span>
