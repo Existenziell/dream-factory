@@ -7,7 +7,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        'sans': ['Nunito'],
+        'serif': ['Nunito'],
+        'mono': ['Nunito'],
+        'display': ['Nunito'],
+        'body': ['Nunito']
+      },
+      colors: {
+        'brand': '#7A009B',
       },
     },
   },

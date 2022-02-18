@@ -1,7 +1,11 @@
-import 'tailwindcss/tailwind.css';
-import Head from 'next/head';
+import 'tailwindcss/tailwind.css'
+import '../styles/globals.css'
+import Head from 'next/head'
+import Cookies from "universal-cookie"
+import consts from "consts"
+import App from "next/app"
 
-function MyApp({ Component, pageProps }) {
+function DreamFactory({ Component, pageProps }) {
   return (
     <>
       <Head>
@@ -13,4 +17,17 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+DreamFactory.getInitialProps = async (appContext) => {
+  const appProps = await App.getInitialProps(appContext)
+  // let appProps
+  const cookies = new Cookies(appContext.ctx.req.headers.cookie)
+  const password = cookies.get(consts.SiteReadCookie) ?? ""
+
+  if (password === "letmein") {
+    appProps.pageProps.hasReadPermission = true
+  }
+
+  return { ...appProps }
+}
+
+export default DreamFactory;

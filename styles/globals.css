@@ -1,0 +1,45 @@
+/* --------------------------------------------------------
+Style Sheet for DreamFactoryRoadmap
+
+version: 0.9
+last modified: 13.09.2021 by Christof Bauer
+author: Christof Bauer
+email: bauer.christof@gmail.com
+----------------------------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+
+:root {
+  --color-brand: #7A009B;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  @apply font-extrabold text-brand;
+}
+
+.mobile-menu .active {
+  @apply text-brand;
+}
+
+.link {
+  @apply underline outline-none transition-all duration-300;
+}
+
+.link:hover {
+  @apply no-underline rounded transition-all duration-500 text-black bg-brand; 
+}
+
+.button {
+  @apply text-brand py-4 px-8 rounded  transition-all cursor-pointer
+    border border-brand bg-opacity-80
+    hover:bg-opacity-100
+    focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand;
+}
+
+.connect-button {
+  @apply px-4 py-2 border border-brand hover:bg-brand transition-all;
+}
