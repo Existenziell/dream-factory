@@ -33,10 +33,14 @@ email: bauer.christof@gmail.com
   @apply no-underline rounded transition-all duration-500 text-black bg-brand; 
 }
 
+.input {
+  @apply text-brand py-2 px-4 rounded text-xs
+    border border-brand bg-opacity-80;
+}
 .button {
-  @apply text-brand py-4 px-8 rounded  transition-all cursor-pointer
+  @apply text-brand py-2 px-4 rounded transition-all cursor-pointer text-xs
     border border-brand bg-opacity-80
-    hover:bg-opacity-100
+    hover:bg-brand hover:text-white
     focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand;
 }
 
