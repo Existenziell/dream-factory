@@ -1,29 +1,22 @@
 {
-  "name": "tailwind-js",
+  "name": "dream-factory",
   "version": "0.1.0",
   "private": true,
+  "author": "Christof Bauer <bauer.christof@gmail.com> (http://christof.digital/)",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,json,md}\""
+    "start": "next start"
   },
   "dependencies": {
-    "next": "^12.0.9",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "next": "^12.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "universal-cookie": "^4.0.4"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.3.4",
-    "autoprefixer": "^10.3.7",
-    "eslint": "7.32.0",
-    "eslint-config-next": "12.0.0",
-    "eslint-config-prettier": "^8.1.0",
-    "postcss": "^8.3.11",
-    "prettier": "^2.4.1",
-    "tailwindcss": "^2.2.17"
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.6",
+    "tailwindcss": "^3.0.23"
   }
 }

@@ -1,9 +1,6 @@
-// eslint-disable-next-line
-const defaultTheme = require('tailwindcss/defaultTheme');
-
 module.exports = {
   mode: 'jit',
-  purge: ['./pages/**/*.js'],
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       fontFamily: {
@@ -19,5 +16,5 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [require('@tailwindcss/forms')],
-};
+  plugins: [],
+}
