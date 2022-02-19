@@ -11,7 +11,7 @@ module.exports = {
         'body': ['Nunito']
       },
       colors: {
-        'brand': '#7A009B',
+        'brand': '#003153',
       },
     },
   },
