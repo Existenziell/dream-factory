@@ -9,7 +9,9 @@ export default function LoginPage({ hasReadPermission }) {
         <Head>
           <title>Logout</title>
         </Head>
-        <Logout />
+        <div className='flex justify-center mt-24'>
+          <Logout />
+        </div>
       </>
     )
   }

@@ -4,7 +4,7 @@ import consts from '../consts'
 const Logout = () => {
   return (
     <button
-      className='mt-16 bg-brand text-white border border-brand px-4 py-2 font-bold rounded hover:shadow hover:bg-white hover:text-brand transition-all'
+      className='bg-brand text-white border border-brand px-4 py-2 font-bold rounded hover:shadow hover:bg-white hover:text-brand transition-all'
       onClick={(e) => {
         e.preventDefault()
         const cookies = new Cookies()
